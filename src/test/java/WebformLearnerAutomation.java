@@ -70,6 +70,7 @@ public class WebformLearnerAutomation {
         // Step 6: Submit the form
         driver.findElement(By.id("edit-submit")).click();
 
+
         // Step 7: Assert that the success message is displayed after form submission
         WebElement successMessage = driver.findElement(By.xpath("//h1[contains(text(),'Thank you for your submission!')]"));
         String actualMessage = successMessage.getText();
