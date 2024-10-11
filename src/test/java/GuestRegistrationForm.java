@@ -75,7 +75,6 @@ public class GuestRegistrationForm {
         // Add a small wait to ensure the year is updated before proceeding
         Thread.sleep(500);
 
-
         // Select the month August using the dropdown
         Select monthDropdown = new Select(driver.findElement(By.xpath("//select[@class='flatpickr-monthDropdown-months']")));
         monthDropdown.selectByVisibleText("August");  // Selects August from the dropdown
@@ -102,7 +101,6 @@ public class GuestRegistrationForm {
         driver.findElement(By.id("privacy_policy_1665633140")).click();
 
         // Step 4: Submit the form
-        // Use the form's submit button directly
         WebElement submitButton = driver.findElement(By.xpath("//button[@type='submit']"));
         submitButton.click();
 

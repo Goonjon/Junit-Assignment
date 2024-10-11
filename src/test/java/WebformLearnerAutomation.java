@@ -25,13 +25,13 @@ public class WebformLearnerAutomation {
     @Test
     public void formAutomation() throws InterruptedException {
 
-        // Step 1: Open the web form URL and verify the title
+        // Step 1: Open the web form URL
         driver.get("https://www.digitalunite.com/practice-webform-learners");
-
-        // Step 2: Fill in the form fields
 
         // Close the modal
         driver.findElements(By.tagName("button")).get(1).click();
+
+        // Step 2: Fill in the form fields
 
         // Fill in the Name field
         driver.findElement(By.id("edit-name")).sendKeys("Test User");
@@ -53,7 +53,7 @@ public class WebformLearnerAutomation {
         // Wait to allow the form fields to load properly
         Thread.sleep(2000);
 
-        // Step 3: Scroll down using your dynamic scroll method
+        // Step 3: Scroll down using dynamic scroll method
         Utils.scroll(driver, 700);
 
         // Step 4: Upload a file (within 2MB limit)
